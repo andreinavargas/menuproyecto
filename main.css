@@ -1,0 +1,76 @@
+.contenedor-menu {
+  list-style: none;
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #14d9c4;
+  padding: 0px;
+  margin: 0px;
+}
+.item-titulo {
+  flex: 0 1 100%;
+  text-align: center;
+  height: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  line-height: 60px;
+  background-color: #1b9688;
+
+}
+.item-cuadro {
+  height: 45px;
+  line-height: 45px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.contenedor-menu a {
+  text-decoration: none;
+  color: white;
+
+}
+.item-titulo h1 {
+  margin: 0px;
+}
+.contenedor-slogan {
+  background-image: url("poster.jpg");
+  height: 297px;
+  display: flex;
+  background-size:cover;
+  width: 100%;
+
+}
+.item-slogan {
+  flex: 0 1 100%;
+  background-color: rgba(255,255,255,0.8);
+  margin-left: 15px;
+  margin-right: 15px;
+  position: relative;
+  top: 200px;
+  font-family: 'Open sans', sans-serif;
+  padding-left: 15px;
+}
+
+@media only screen and (min-width: 992px) {
+  .contenedor-menu {
+    background-color: #1b9688;
+  }
+  .item-titulo {
+    flex: 0 1 50%;
+  }
+  .item-cuadro {
+    height: 60px;
+    line-height: 60px;
+  }
+  .item-slogan {
+    flex: 0 1 30%;
+    text-align: center;
+    top: 350px;
+  }
+  .contenedor-slogan {
+    height: 421px;
+  }
+}
